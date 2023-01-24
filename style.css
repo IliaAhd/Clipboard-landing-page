@@ -1,0 +1,51 @@
+:root {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+
+
+/* Bootstrap utility classes */
+.text-primary {
+    color: var(--Strong-Cyan) !important;
+}
+.bg-primary {
+    background-color: var(--Strong-Cyan) !important;
+}
+.btn-primary {
+    background-color: var(--Strong-Cyan) !important;
+    border: none !important;
+    transition: all .2s;
+}
+.btn-primary:hover {
+    opacity: .8 !important;
+    border: none !important;
+}
+
+.text-secondary {
+    color: var(--Light-Blue) !important;
+}
+.bg-secondary {
+    background-color: var(--Light-Blue) !important;
+}
+.btn-secondary {
+    background-color: var(--Light-Blue) !important;
+    border: none !important;
+    transition: all .2s;
+}
+.btn-secondary:hover {
+    opacity: .8 !important;
+    border: none !important;
+}
+
+.text-dark {
+    color: var(--Dark-Grayish-Blue) !important;
+}
+.text-muted {
+    color: var(--Grayish-Blue) !important;
+}
