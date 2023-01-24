@@ -1,51 +1,82 @@
 :root {
-    font-family: 'Bai Jamjuree', sans-serif;
-    font-size: 18px;
+  font-size: 18px;
 
-    --Strong-Cyan: hsl(171, 66%, 44%);
-    --Light-Blue: hsl(233, 100%, 69%);
-    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
-    --Grayish-Blue: hsl(201, 11%, 66%);
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
 }
 
+* {
+  font-family: "Bai Jamjuree", sans-serif !important;
+}
 
+header {
+  background: url(images/bg-header-desktop.png) no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+ 
+/* Utility classes */
+.fw-400 {
+  font-weight: 400;
+}
+.fw-600 {
+  font-weight: 600;
+}
 
 /* Bootstrap utility classes */
+.btn {
+    padding-block: .7rem !important;
+}
+
+@media (max-width: 675px) {
+    .btn {
+        width: 90% !important;
+    }
+    .header-par {
+        width: 100% !important;
+    }
+}
+
 .text-primary {
-    color: var(--Strong-Cyan) !important;
+  color: var(--Strong-Cyan) !important;
 }
 .bg-primary {
-    background-color: var(--Strong-Cyan) !important;
+  background-color: var(--Strong-Cyan) !important;
 }
 .btn-primary {
-    background-color: var(--Strong-Cyan) !important;
-    border: none !important;
-    transition: all .2s;
+  background-color: var(--Strong-Cyan) !important;
+  border: none !important;
+  transition: all 0.2s;
+  border-bottom: 3.5px solid hsl(171, 66%, 34%) !important;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
 }
 .btn-primary:hover {
-    opacity: .8 !important;
-    border: none !important;
+  opacity: 0.7 !important;
+  box-shadow: none;
 }
 
 .text-secondary {
-    color: var(--Light-Blue) !important;
+  color: var(--Light-Blue) !important;
 }
 .bg-secondary {
-    background-color: var(--Light-Blue) !important;
+  background-color: var(--Light-Blue) !important;
 }
 .btn-secondary {
-    background-color: var(--Light-Blue) !important;
-    border: none !important;
-    transition: all .2s;
+  background-color: var(--Light-Blue) !important;
+  border: none !important;
+  transition: all 0.2s;
+  border-bottom: 3.5px solid hsl(233, 100%, 61%) !important;
 }
 .btn-secondary:hover {
-    opacity: .8 !important;
-    border: none !important;
+  opacity: 0.7 !important;
+  box-shadow: 0px 15px 20px rgba(46, 95, 229, 0.4);
 }
 
 .text-dark {
-    color: var(--Dark-Grayish-Blue) !important;
+  color: var(--Dark-Grayish-Blue) !important;
 }
 .text-muted {
-    color: var(--Grayish-Blue) !important;
+  color: var(--Grayish-Blue) !important;
 }
