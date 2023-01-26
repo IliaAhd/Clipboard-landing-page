@@ -16,6 +16,13 @@ header {
   background-size: cover;
   min-height: 100vh;
 }
+
+@media (max-width: 50em) {
+  header {
+    background: url(images/bg-header-mobile.png) no-repeat;
+    background-size: cover;
+  }
+}
  
 /* Utility classes */
 .fw-400 {
@@ -34,7 +41,7 @@ header {
     .btn {
         width: 90% !important;
     }
-    .header-par {
+    .par {
         width: 100% !important;
     }
 }
