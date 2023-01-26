@@ -1,6 +1,4 @@
 :root {
-  font-size: 18px;
-
   --Strong-Cyan: hsl(171, 66%, 44%);
   --Light-Blue: hsl(233, 100%, 69%);
   --Dark-Grayish-Blue: hsl(210, 10%, 33%);
@@ -21,6 +19,19 @@ header {
   header {
     background: url(images/bg-header-mobile.png) no-repeat;
     background-size: cover;
+  }
+}
+
+@media (min-width: 767px) {
+  .features-img {
+    display: none;
+  }
+  .bg-img {
+    background: url(images/image-computer.png);
+    background-position: -20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
   }
 }
  
